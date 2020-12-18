@@ -12,40 +12,52 @@ class Candy():
 
 
 class Snickers(Candy):
-    base = 'nougat'
-    filler = 'caramel'
-    center = 'peanuts'
-    topping = 'chocolate'
-    shape = 'bar'
+    def __init__(self):
+        #Snickers = slogan()
+#        print(Snickers.information())
+ #       print(Snickers.slogan())
+
+        self.base = 'nougat'
+        self.filler = 'caramel'
+        self.center = 'peanuts'
+        self.topping = 'chocolate'
+        self.shape = 'bar'
+        self.label = 'brown' 
     def slogan(self):
-        msg = "\nYour not you when your hungry!"
-        print(msg) 
+        self.msg = "\nYour not you when your hungry!"
+        print(self.msg) 
     
 
 class KitKat(Candy):
-    base = 'waffers'
+    base = 'wafers'
     filler = 'chocolate'
-    center = 'waffers'
+    center = 'wafers'
     shape = 'bars'
+    parts = '4'
 
     def snap(self):
         msg = '\nsnap snap crunch!'
         print(msg) 
 
 
-    
-def __init__(base, filler, center, topping, shape):
-    #Snickers = slogan()
-    print(Snickers.information())
-    print(Snickers.slogan())
+Snickers_test = Snickers()
+Snickers_test.slogan()
+print(Snickers_test.base) 
 
-    KitKat = snap()
-    print(KitKat.information())
-    print(KitKat.snap)
+##    
+##def __init__(base, filler, center, topping, shape):
+##    #Snickers = slogan()
+##    print(Snickers.information())
+##    print(Snickers.slogan())
+##
+##    KitKat = snap()
+##    print(KitKat.information())
+##    print(KitKat.snap)
 
 
 snickers = Snickers()
-snickers.information()
+snickers.information() #prints info specified in information 
+
 
 
 
