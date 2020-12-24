@@ -22,8 +22,9 @@ class Snickers(Candy):
         self.center = 'peanuts'
         self.topping = 'chocolate'
         self.shape = 'bar'
-        self.label = 'brown' 
-    def slogan(self):
+        self.label = 'brown'
+        self.allergies = 'nuts' 
+    def information(self):
         self.msg = "\nYour not you when your hungry!"
         print(self.msg) 
     
@@ -34,15 +35,17 @@ class KitKat(Candy):
     center = 'wafers'
     shape = 'bars'
     parts = '4'
+    taste = 'chocolatey' 
 
-    def snap(self):
+    def information(self):
         msg = '\nsnap snap crunch!'
         print(msg) 
 
 
 Snickers_test = Snickers()
-Snickers_test.slogan()
-print(Snickers_test.base) 
+Snickers_test.information()
+
+#print(Snickers_test.base) 
 
 ##    
 ##def __init__(base, filler, center, topping, shape):
@@ -56,7 +59,14 @@ print(Snickers_test.base)
 
 
 snickers = Snickers()
-snickers.information() #prints info specified in information 
+snickers.information() #prints info specified in information
+
+kitkat = KitKat()
+kitkat.information()
+
+
+
+
 
 
 
