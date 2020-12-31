@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod  # importing abstract method 
 
 class cars(ABC): # defining parent class cars 
-
+   @abstractmethod 
    def movement(self): # defining parent class
       pass  
 
