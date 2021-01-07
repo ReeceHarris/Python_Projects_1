@@ -14,7 +14,7 @@ filename = "demofile2.html"
 def browseFiles():
     global filename
     filename = filedialog.askopenfilename(initialdir = "/Desktop", 
-    title = "Select a File", filetypes = (("Htlm files", "*.html*"),("all files", "*.*"))) 
+    title = "Select a File", filetypes = (("Html files", "*.html*"),("all files", "*.*"))) 
 	
     # Change label contents 
     label_file_explorer.configure(text="File Opened: "+filename)
